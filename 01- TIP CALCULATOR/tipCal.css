@@ -1,0 +1,245 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling body */
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #00b8b8;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* styling Website Container */
+.container{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    /* border: 1px solid black; */
+}
+
+/* Logo */
+#logo{
+    color: teal;
+    letter-spacing: 0.3em;
+    line-height: 1.3em;
+}
+
+/* Styling Split Calculator */
+#splitCal{
+    height: 70%;
+    width: 75%;
+    padding: 2vh 2vw;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 1px solid blueviolet; */
+}
+
+
+/* styling Calculatory Part */
+/* calPart1 */
+.calPart1{
+    height: 90%;
+    width: 48%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* border: 1px solid blue; */
+}
+
+/* Styling for billAmountTab and splitTab */
+.billAmountTab , .splitTab{
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* border: 1px solid red; */
+}
+
+/* commom CSS for label and Input in billAmountTab and splitTab */
+label{
+    color: #5d5757;
+    font-size: 14px;
+}
+.billAmountTab input, .splitTab input{
+    width: 100%;
+    height: 65%;
+    padding: 0.5vh 2vh;
+
+    /* text-align: right; */
+    font-size: 32px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(93, 87, 87, 0.1);
+    caret-color: teal;
+    cursor: pointer;
+    color: #007878;
+}
+
+/* Styling for tipTab */
+.tipTab{
+    height: 50%;
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* border: 1px solid green; */
+}
+
+/* styling button class of tipTab */
+.tipTab .button{
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* border: 1px solid black; */
+}
+
+/* buttons and input in button class */
+.tipTab .button button, .tipTab .button input{
+    width: 30%;
+    height: 40%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background-color: teal;
+    cursor: pointer;
+    caret-color: #006d6d;
+
+}
+
+.tipTab .button button:active, .tipTab .button input:focus{
+    border: 2px solid #5d5757;
+}
+
+#custom{
+    background-color: rgba(93, 87, 87, 0.1);
+    color: teal;
+    text-align: center;
+}
+
+
+
+
+/* Styling Calculations */
+/* calPart2 */
+.calPart2{
+    height: 90%;
+    width: 48%;
+
+    background-color: teal;
+    color: whitesmoke;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 1px solid blue; */
+}
+
+.calPart2 .amountCal{
+    width: 90%;
+    height: 50%;
+    margin-top: 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 1px solid black; */
+}
+
+.tipCal , .totalCal{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+.tipCal label, .totalCal label{
+    width: 50%;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.tipCal p, .totalCal p{
+    color: rgba(245, 245, 245, 0.5);
+}
+
+.tipCal input, .totalCal input{
+    width: 50%;
+    height: 50%;
+    text-align: right;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 45px;
+    font-weight: bold;
+    color: #002727;
+    cursor: pointer;
+    caret-color: whitesmoke;    
+}
+
+
+/* Reset button */
+.calPart2 #reset, .calPart2 #calculate{
+    width: 90%;
+    height: 15%;
+    margin-bottom: 5%;
+
+    background-color: #006d6d;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#reset{
+    display: none;
+}
+
+#calculate{
+    /* display: none; */
+}

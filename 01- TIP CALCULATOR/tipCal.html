@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipCal</title>
+    <link rel="stylesheet" href="tipCal.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div id="logo">
+            <p>S P L I</p>
+            <P>T T E R</P>
+        </div>
+
+        <div id="splitCal">
+            <div class="calPart1">
+                
+                <div class="billAmountTab">
+                    <label for="billAmt">Bill Amount</label>
+                    <br>
+                    <input type="text" name="" id="billAmt" value="100">
+                </div>
+
+                <div class="tipTab">
+                    <label for="">Select tip %</label>
+                    <div class="button">
+                        <button class="tipButton">5%</button>
+                        <button class="tipButton">10%</button>
+                        <button class="tipButton">15%</button>
+                        <button class="tipButton">25%</button>
+                        <button class="tipButton">50%</button>
+                        <input id="custom" placeholder="CUSTOM">
+                    </div>
+                    
+                </div>
+                
+                <div class="splitTab">
+                    <label for="people">Number of People</label>
+                    <input type="text" id="people" value="2" >
+                </div>
+                
+            </div>
+
+            <div class="calPart2">
+                 
+                <div class="amountCal">
+                    <div class="tipCal">
+                        <label for="tipAmt">Tip Amount <br> <p class="perPerson">/ person </p> </label>
+                        <input type="text" name="" id="tipAmt" value="0">
+                    </div>
+                    <div class="totalCal">
+                        <label for="totalAmt">Total Amount <br> <p class="perPerson">/ person </p> </label>
+                        <input type="text" name="" id="totalAmt" value="0">
+                    </div>
+                </div>
+                
+                <button id="calculate" onclick="calculateBillPerPerson()">calculate</button>
+                <button id="reset" onclick="resetFunction()">RESET</button>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <button class="btn">button 1</button>
+    <button class="btn">button 2</button>
+    <button class="btn">button 3</button>
+    <button class="btn">button 4</button> -->
+
+    <script src="tipCal.js"></script>
+</body>
+</html>
